@@ -7,13 +7,17 @@ body {
   margin: 0 auto;
   padding: 0 25px;
   color: #26332f;
-  background: #f5f3ee;
+  background: #e9eee9;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
 header {
-  padding: 70px 20px 45px;
+  margin: 25px 0;
+  padding: 55px 25px;
+  color: white;
+  background: #174f42;
+  border-radius: 12px;
   text-align: center;
 }
 
@@ -25,13 +29,12 @@ h2 {
 
 h1 {
   margin: 0;
-  color: #174f42;
-  font-size: 3.2rem;
+  font-size: 3.4rem;
 }
 
 header p {
-  margin: 8px 0 25px;
-  color: #66736e;
+  margin: 8px 0 28px;
+  color: #d7e3dc;
   font-size: 1.1rem;
 }
 
@@ -46,25 +49,32 @@ a {
 }
 
 nav a {
-  padding-bottom: 4px;
+  padding: 8px 14px;
+  color: white;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  border: 1px solid #82a997;
+  border-radius: 20px;
 }
 
 nav a:hover {
-  border-color: #174f42;
+  color: #174f42;
+  background: white;
 }
 
 section {
   margin-bottom: 25px;
   padding: 35px;
-  background: #ffffff;
-  border: 1px solid #e3e5df;
-  border-radius: 8px;
+  background: white;
+  border: 1px solid #d5ded7;
+  border-radius: 12px;
+}
+
+section:nth-child(even) {
+  background: #f9fbf8;
 }
 
 h2 {
-  margin-top: 0;
+  margin: 0 0 20px;
   color: #174f42;
   font-size: 2rem;
 }
@@ -73,41 +83,48 @@ section p:last-child {
   margin-bottom: 0;
 }
 
-.main-image {
+img {
   display: block;
+}
+
+.main-image {
   width: 100%;
-  height: 260px;
+  height: 280px;
   margin: 20px 0 25px;
   object-fit: cover;
-  border-radius: 6px;
+  object-position: center;
+  border-radius: 8px;
 }
 
 .images {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 18px;
   margin-bottom: 25px;
 }
 
 .images img {
-  width: 50%;
-  height: 170px;
+  width: 100%;
+  height: 190px;
   object-fit: cover;
-  border-radius: 6px;
+  object-position: center;
+  border-radius: 8px;
 }
 
 ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 14px;
   padding: 0;
   list-style: none;
 }
 
 li {
-  padding: 14px;
+  padding: 16px;
   color: #174f42;
-  background: #eef2ed;
-  border-left: 4px solid #b7c96b;
+  background: #e9f0e9;
+  border-left: 5px solid #afc967;
+  border-radius: 4px;
 }
 
 footer {
@@ -126,7 +143,8 @@ footer p {
   }
 
   header {
-    padding: 45px 10px 30px;
+    margin: 15px 0;
+    padding: 40px 15px;
   }
 
   h1 {
@@ -134,7 +152,12 @@ footer p {
   }
 
   nav {
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 6px 10px;
     font-size: 0.9rem;
   }
 
@@ -147,15 +170,16 @@ footer p {
   }
 
   .main-image {
-    height: 190px;
+    height: 200px;
   }
 
   .images {
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .images img {
-    height: 110px;
+    height: 150px;
   }
 
   ul {
